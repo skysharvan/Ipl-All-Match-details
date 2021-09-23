@@ -7,8 +7,8 @@ let htmlkedata = fs.readFileSync("practice1.html");
 // console.log(htmlkedata + "");
 
 let ch = cheerio.load(htmlkedata);
-// let h3kedata = ch("h3").text();
-// console.log(h3kedata);
+let h3kedata = ch("h3").text();
+console.log(h3kedata);
 
 let pkedata = ch("p");
 
